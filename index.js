@@ -1,3 +1,3 @@
 function myRedirect() {
-    location.href="/login.html"
+    location.href="/effective-system/login.html"
 }
