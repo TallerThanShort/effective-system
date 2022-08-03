@@ -1,6 +1,6 @@
 window.onload = () => {
     const maestro = document.getElementById("master-div");
-    const user = auth.currentUser;
+    const user = firebase.auth().currentUser;
     if(user){
         store.collection("c").where("id", "==", user.uid)
             .get()
