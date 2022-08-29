@@ -1,5 +1,5 @@
-auth.onAuthStateChanged(user => {
-    if(user){
+window.onload = function(){
+    if(auth.user != null){
       store.collection('c').get().then(snapshot => {
       setupUI(user);
     }, err => {
